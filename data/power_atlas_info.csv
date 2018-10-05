@@ -1,0 +1,265 @@
+ROI,X,Y,Z,MasterAssignment,SuggestedSystem,color,network_revised,roi_name_unique,color_updated
+1,-25,-98,-12,-1,Uncertain,White,uncertain,roi_1_uncertain,white
+2,27,-97,-13,-1,Uncertain,White,uncertain,roi_2_uncertain,white
+3,24,32,-18,-1,Uncertain,White,uncertain,roi_3_uncertain,white
+4,-56,-45,-24,-1,Uncertain,White,uncertain,roi_4_uncertain,white
+5,8,41,-24,-1,Uncertain,White,uncertain,roi_5_uncertain,white
+6,-21,-22,-20,-1,Uncertain,White,uncertain,roi_6_uncertain,white
+7,17,-28,-17,-1,Uncertain,White,uncertain,roi_7_uncertain,white
+8,-37,-29,-26,-1,Uncertain,White,uncertain,roi_8_uncertain,white
+9,65,-24,-19,-1,Uncertain,White,uncertain,roi_9_uncertain,white
+10,52,-34,-27,-1,Uncertain,White,uncertain,roi_10_uncertain,white
+11,55,-31,-17,-1,Uncertain,White,uncertain,roi_11_uncertain,white
+12,34,38,-12,-1,Uncertain,White,uncertain,roi_12_uncertain,white
+13,-7,-52,61,1,Sensory/somatomotor Hand,Cyan,hand,roi_13_hand,cyan
+14,-14,-18,40,1,Sensory/somatomotor Hand,Cyan,hand,roi_14_hand,cyan
+15,0,-15,47,1,Sensory/somatomotor Hand,Cyan,hand,roi_15_hand,cyan
+16,10,-2,45,1,Sensory/somatomotor Hand,Cyan,hand,roi_16_hand,cyan
+17,-7,-21,65,1,Sensory/somatomotor Hand,Cyan,hand,roi_17_hand,cyan
+18,-7,-33,72,1,Sensory/somatomotor Hand,Cyan,hand,roi_18_hand,cyan
+19,13,-33,75,1,Sensory/somatomotor Hand,Cyan,hand,roi_19_hand,cyan
+20,-54,-23,43,1,Sensory/somatomotor Hand,Cyan,hand,roi_20_hand,cyan
+21,29,-17,71,1,Sensory/somatomotor Hand,Cyan,hand,roi_21_hand,cyan
+22,10,-46,73,1,Sensory/somatomotor Hand,Cyan,hand,roi_22_hand,cyan
+23,-23,-30,72,1,Sensory/somatomotor Hand,Cyan,hand,roi_23_hand,cyan
+24,-40,-19,54,1,Sensory/somatomotor Hand,Cyan,hand,roi_24_hand,cyan
+25,29,-39,59,1,Sensory/somatomotor Hand,Cyan,hand,roi_25_hand,cyan
+26,50,-20,42,1,Sensory/somatomotor Hand,Cyan,hand,roi_26_hand,cyan
+27,-38,-27,69,1,Sensory/somatomotor Hand,Cyan,hand,roi_27_hand,cyan
+28,20,-29,60,1,Sensory/somatomotor Hand,Cyan,hand,roi_28_hand,cyan
+29,44,-8,57,1,Sensory/somatomotor Hand,Cyan,hand,roi_29_hand,cyan
+30,-29,-43,61,1,Sensory/somatomotor Hand,Cyan,hand,roi_30_hand,cyan
+31,10,-17,74,1,Sensory/somatomotor Hand,Cyan,hand,roi_31_hand,cyan
+32,22,-42,69,1,Sensory/somatomotor Hand,Cyan,hand,roi_32_hand,cyan
+33,-45,-32,47,1,Sensory/somatomotor Hand,Cyan,hand,roi_33_hand,cyan
+34,-21,-31,61,1,Sensory/somatomotor Hand,Cyan,hand,roi_34_hand,cyan
+35,-13,-17,75,1,Sensory/somatomotor Hand,Cyan,hand,roi_35_hand,cyan
+36,42,-20,55,1,Sensory/somatomotor Hand,Cyan,hand,roi_36_hand,cyan
+37,-38,-15,69,1,Sensory/somatomotor Hand,Cyan,hand,roi_37_hand,cyan
+38,-16,-46,73,1,Sensory/somatomotor Hand,Cyan,hand,roi_38_hand,cyan
+39,2,-28,60,1,Sensory/somatomotor Hand,Cyan,hand,roi_39_hand,cyan
+40,3,-17,58,1,Sensory/somatomotor Hand,Cyan,hand,roi_40_hand,cyan
+41,38,-17,45,1,Sensory/somatomotor Hand,Cyan,hand,roi_41_hand,cyan
+42,-49,-11,35,2,Sensory/somatomotor Mouth,Orange,mouth,roi_42_mouth,orange
+43,36,-9,14,2,Sensory/somatomotor Mouth,Orange,mouth,roi_43_mouth,orange
+44,51,-6,32,2,Sensory/somatomotor Mouth,Orange,mouth,roi_44_mouth,orange
+45,-53,-10,24,2,Sensory/somatomotor Mouth,Orange,mouth,roi_45_mouth,orange
+46,66,-8,25,2,Sensory/somatomotor Mouth,Orange,mouth,roi_46_mouth,orange
+47,-3,2,53,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_47_cing_oper_task_control,purple
+48,54,-28,34,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_48_cing_oper_task_control,purple
+49,19,-8,64,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_49_cing_oper_task_control,purple
+50,-16,-5,71,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_50_cing_oper_task_control,purple
+51,-10,-2,42,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_51_cing_oper_task_control,purple
+52,37,1,-4,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_52_cing_oper_task_control,purple
+53,13,-1,70,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_53_cing_oper_task_control,purple
+54,7,8,51,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_54_cing_oper_task_control,purple
+55,-45,0,9,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_55_cing_oper_task_control,purple
+56,49,8,-1,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_56_cing_oper_task_control,purple
+57,-34,3,4,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_57_cing_oper_task_control,purple
+58,-51,8,-2,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_58_cing_oper_task_control,purple
+59,-5,18,34,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_59_cing_oper_task_control,purple
+60,36,10,1,3,Cingulo-opercular Task Control,Purple,cing_oper_task_control,roi_60_cing_oper_task_control,purple
+61,32,-26,13,4,Auditory,Pink,auditory,roi_61_auditory,pink
+62,65,-33,20,4,Auditory,Pink,auditory,roi_62_auditory,pink
+63,58,-16,7,4,Auditory,Pink,auditory,roi_63_auditory,pink
+64,-38,-33,17,4,Auditory,Pink,auditory,roi_64_auditory,pink
+65,-60,-25,14,4,Auditory,Pink,auditory,roi_65_auditory,pink
+66,-49,-26,5,4,Auditory,Pink,auditory,roi_66_auditory,pink
+67,43,-23,20,4,Auditory,Pink,auditory,roi_67_auditory,pink
+68,-50,-34,26,4,Auditory,Pink,auditory,roi_68_auditory,pink
+69,-53,-22,23,4,Auditory,Pink,auditory,roi_69_auditory,pink
+70,-55,-9,12,4,Auditory,Pink,auditory,roi_70_auditory,pink
+71,56,-5,13,4,Auditory,Pink,auditory,roi_71_auditory,pink
+72,59,-17,29,4,Auditory,Pink,auditory,roi_72_auditory,pink
+73,-30,-27,12,4,Auditory,Pink,auditory,roi_73_auditory,pink
+74,-41,-75,26,5,Default mode,Red,dmn,roi_74_dmn,red
+75,6,67,-4,5,Default mode,Red,dmn,roi_75_dmn,red
+76,8,48,-15,5,Default mode,Red,dmn,roi_76_dmn,red
+77,-13,-40,1,5,Default mode,Red,dmn,roi_77_dmn,red
+78,-18,63,-9,5,Default mode,Red,dmn,roi_78_dmn,red
+79,-46,-61,21,5,Default mode,Red,dmn,roi_79_dmn,red
+80,43,-72,28,5,Default mode,Red,dmn,roi_80_dmn,red
+81,-44,12,-34,5,Default mode,Red,dmn,roi_81_dmn,red
+82,46,16,-30,5,Default mode,Red,dmn,roi_82_dmn,red
+83,-68,-23,-16,5,Default mode,Red,dmn,roi_83_dmn,red
+84,-58,-26,-15,-1,Uncertain,White,uncertain,roi_84_uncertain,white
+85,27,16,-17,-1,Uncertain,White,uncertain,roi_85_uncertain,white
+86,-44,-65,35,5,Default mode,Red,dmn,roi_86_dmn,red
+87,-39,-75,44,5,Default mode,Red,dmn,roi_87_dmn,red
+88,-7,-55,27,5,Default mode,Red,dmn,roi_88_dmn,red
+89,6,-59,35,5,Default mode,Red,dmn,roi_89_dmn,red
+90,-11,-56,16,5,Default mode,Red,dmn,roi_90_dmn,red
+91,-3,-49,13,5,Default mode,Red,dmn,roi_91_dmn,red
+92,8,-48,31,5,Default mode,Red,dmn,roi_92_dmn,red
+93,15,-63,26,5,Default mode,Red,dmn,roi_93_dmn,red
+94,-2,-37,44,5,Default mode,Red,dmn,roi_94_dmn,red
+95,11,-54,17,5,Default mode,Red,dmn,roi_95_dmn,red
+96,52,-59,36,5,Default mode,Red,dmn,roi_96_dmn,red
+97,23,33,48,5,Default mode,Red,dmn,roi_97_dmn,red
+98,-10,39,52,5,Default mode,Red,dmn,roi_98_dmn,red
+99,-16,29,53,5,Default mode,Red,dmn,roi_99_dmn,red
+100,-35,20,51,5,Default mode,Red,dmn,roi_100_dmn,red
+101,22,39,39,5,Default mode,Red,dmn,roi_101_dmn,red
+102,13,55,38,5,Default mode,Red,dmn,roi_102_dmn,red
+103,-10,55,39,5,Default mode,Red,dmn,roi_103_dmn,red
+104,-20,45,39,5,Default mode,Red,dmn,roi_104_dmn,red
+105,6,54,16,5,Default mode,Red,dmn,roi_105_dmn,red
+106,6,64,22,5,Default mode,Red,dmn,roi_106_dmn,red
+107,-7,51,-1,5,Default mode,Red,dmn,roi_107_dmn,red
+108,9,54,3,5,Default mode,Red,dmn,roi_108_dmn,red
+109,-3,44,-9,5,Default mode,Red,dmn,roi_109_dmn,red
+110,8,42,-5,5,Default mode,Red,dmn,roi_110_dmn,red
+111,-11,45,8,5,Default mode,Red,dmn,roi_111_dmn,red
+112,-2,38,36,5,Default mode,Red,dmn,roi_112_dmn,red
+113,-3,42,16,5,Default mode,Red,dmn,roi_113_dmn,red
+114,-20,64,19,5,Default mode,Red,dmn,roi_114_dmn,red
+115,-8,48,23,5,Default mode,Red,dmn,roi_115_dmn,red
+116,65,-12,-19,5,Default mode,Red,dmn,roi_116_dmn,red
+117,-56,-13,-10,5,Default mode,Red,dmn,roi_117_dmn,red
+118,-58,-30,-4,5,Default mode,Red,dmn,roi_118_dmn,red
+119,65,-31,-9,5,Default mode,Red,dmn,roi_119_dmn,red
+120,-68,-41,-5,5,Default mode,Red,dmn,roi_120_dmn,red
+121,13,30,59,5,Default mode,Red,dmn,roi_121_dmn,red
+122,12,36,20,5,Default mode,Red,dmn,roi_122_dmn,red
+123,52,-2,-16,5,Default mode,Red,dmn,roi_123_dmn,red
+124,-26,-40,-8,5,Default mode,Red,dmn,roi_124_dmn,red
+125,27,-37,-13,5,Default mode,Red,dmn,roi_125_dmn,red
+126,-34,-38,-16,5,Default mode,Red,dmn,roi_126_dmn,red
+127,28,-77,-32,5,Default mode,Red,dmn,roi_127_dmn,red
+128,52,7,-30,5,Default mode,Red,dmn,roi_128_dmn,red
+129,-53,3,-27,5,Default mode,Red,dmn,roi_129_dmn,red
+130,47,-50,29,5,Default mode,Red,dmn,roi_130_dmn,red
+131,-49,-42,1,5,Default mode,Red,dmn,roi_131_dmn,red
+132,-31,19,-19,-1,Uncertain,White,uncertain,roi_132_uncertain,white
+133,-2,-35,31,6,Memory retrieval?,Gray,mem_retr,roi_133_mem_retr,gray
+134,-7,-71,42,6,Memory retrieval?,Gray,mem_retr,roi_134_mem_retr,gray
+135,11,-66,42,6,Memory retrieval?,Gray,mem_retr,roi_135_mem_retr,gray
+136,4,-48,51,6,Memory retrieval?,Gray,mem_retr,roi_136_mem_retr,gray
+137,-46,31,-13,5,Default mode,Red,dmn,roi_137_dmn,red
+138,-10,11,67,11,Ventral attention,Teal,ventral_attention,roi_138_ventral_attention,olivedrab
+139,49,35,-12,5,Default mode,Red,dmn,roi_139_dmn,red
+140,8,-91,-7,-1,Uncertain,White,uncertain,roi_140_uncertain,white
+141,17,-91,-14,-1,Uncertain,White,uncertain,roi_141_uncertain,white
+142,-12,-95,-13,-1,Uncertain,White,uncertain,roi_142_uncertain,white
+143,18,-47,-10,7,Visual,Blue,visual,roi_143_visual,blue
+144,40,-72,14,7,Visual,Blue,visual,roi_144_visual,blue
+145,8,-72,11,7,Visual,Blue,visual,roi_145_visual,blue
+146,-8,-81,7,7,Visual,Blue,visual,roi_146_visual,blue
+147,-28,-79,19,7,Visual,Blue,visual,roi_147_visual,blue
+148,20,-66,2,7,Visual,Blue,visual,roi_148_visual,blue
+149,-24,-91,19,7,Visual,Blue,visual,roi_149_visual,blue
+150,27,-59,-9,7,Visual,Blue,visual,roi_150_visual,blue
+151,-15,-72,-8,7,Visual,Blue,visual,roi_151_visual,blue
+152,-18,-68,5,7,Visual,Blue,visual,roi_152_visual,blue
+153,43,-78,-12,7,Visual,Blue,visual,roi_153_visual,blue
+154,-47,-76,-10,7,Visual,Blue,visual,roi_154_visual,blue
+155,-14,-91,31,7,Visual,Blue,visual,roi_155_visual,blue
+156,15,-87,37,7,Visual,Blue,visual,roi_156_visual,blue
+157,29,-77,25,7,Visual,Blue,visual,roi_157_visual,blue
+158,20,-86,-2,7,Visual,Blue,visual,roi_158_visual,blue
+159,15,-77,31,7,Visual,Blue,visual,roi_159_visual,blue
+160,-16,-52,-1,7,Visual,Blue,visual,roi_160_visual,blue
+161,42,-66,-8,7,Visual,Blue,visual,roi_161_visual,blue
+162,24,-87,24,7,Visual,Blue,visual,roi_162_visual,blue
+163,6,-72,24,7,Visual,Blue,visual,roi_163_visual,blue
+164,-42,-74,0,7,Visual,Blue,visual,roi_164_visual,blue
+165,26,-79,-16,7,Visual,Blue,visual,roi_165_visual,blue
+166,-16,-77,34,7,Visual,Blue,visual,roi_166_visual,blue
+167,-3,-81,21,7,Visual,Blue,visual,roi_167_visual,blue
+168,-40,-88,-6,7,Visual,Blue,visual,roi_168_visual,blue
+169,37,-84,13,7,Visual,Blue,visual,roi_169_visual,blue
+170,6,-81,6,7,Visual,Blue,visual,roi_170_visual,blue
+171,-26,-90,3,7,Visual,Blue,visual,roi_171_visual,blue
+172,-33,-79,-13,7,Visual,Blue,visual,roi_172_visual,blue
+173,37,-81,1,7,Visual,Blue,visual,roi_173_visual,blue
+174,-44,2,46,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_174_fronto_parietal_task_control,yellow
+175,48,25,27,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_175_fronto_parietal_task_control,yellow
+176,-47,11,23,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_176_fronto_parietal_task_control,yellow
+177,-53,-49,43,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_177_fronto_parietal_task_control,yellow
+178,-23,11,64,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_178_fronto_parietal_task_control,yellow
+179,58,-53,-14,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_179_fronto_parietal_task_control,yellow
+180,24,45,-15,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_180_fronto_parietal_task_control,yellow
+181,34,54,-13,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_181_fronto_parietal_task_control,yellow
+182,-21,41,-20,-1,Uncertain,White,uncertain,roi_182_uncertain,white
+183,-18,-76,-24,-1,Uncertain,White,uncertain,roi_183_uncertain,white
+184,17,-80,-34,-1,Uncertain,White,uncertain,roi_184_uncertain,white
+185,35,-67,-34,-1,Uncertain,White,uncertain,roi_185_uncertain,white
+186,47,10,33,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_186_fronto_parietal_task_control,yellow
+187,-41,6,33,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_187_fronto_parietal_task_control,yellow
+188,-42,38,21,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_188_fronto_parietal_task_control,yellow
+189,38,43,15,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_189_fronto_parietal_task_control,yellow
+190,49,-42,45,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_190_fronto_parietal_task_control,yellow
+191,-28,-58,48,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_191_fronto_parietal_task_control,yellow
+192,44,-53,47,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_192_fronto_parietal_task_control,yellow
+193,32,14,56,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_193_fronto_parietal_task_control,yellow
+194,37,-65,40,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_194_fronto_parietal_task_control,yellow
+195,-42,-55,45,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_195_fronto_parietal_task_control,yellow
+196,40,18,40,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_196_fronto_parietal_task_control,yellow
+197,-34,55,4,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_197_fronto_parietal_task_control,yellow
+198,-42,45,-2,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_198_fronto_parietal_task_control,yellow
+199,33,-53,44,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_199_fronto_parietal_task_control,yellow
+200,43,49,-2,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_200_fronto_parietal_task_control,yellow
+201,-42,25,30,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_201_fronto_parietal_task_control,yellow
+202,-3,26,44,8,Fronto-parietal Task Control,Yellow,fronto_parietal_task_control,roi_202_fronto_parietal_task_control,yellow
+203,11,-39,50,9,Salience,Black,salience,roi_203_salience,black
+204,55,-45,37,9,Salience,Black,salience,roi_204_salience,black
+205,42,0,47,9,Salience,Black,salience,roi_205_salience,black
+206,31,33,26,9,Salience,Black,salience,roi_206_salience,black
+207,48,22,10,9,Salience,Black,salience,roi_207_salience,black
+208,-35,20,0,9,Salience,Black,salience,roi_208_salience,black
+209,36,22,3,9,Salience,Black,salience,roi_209_salience,black
+210,37,32,-2,9,Salience,Black,salience,roi_210_salience,black
+211,34,16,-8,9,Salience,Black,salience,roi_211_salience,black
+212,-11,26,25,9,Salience,Black,salience,roi_212_salience,black
+213,-1,15,44,9,Salience,Black,salience,roi_213_salience,black
+214,-28,52,21,9,Salience,Black,salience,roi_214_salience,black
+215,0,30,27,9,Salience,Black,salience,roi_215_salience,black
+216,5,23,37,9,Salience,Black,salience,roi_216_salience,black
+217,10,22,27,9,Salience,Black,salience,roi_217_salience,black
+218,31,56,14,9,Salience,Black,salience,roi_218_salience,black
+219,26,50,27,9,Salience,Black,salience,roi_219_salience,black
+220,-39,51,17,9,Salience,Black,salience,roi_220_salience,black
+221,2,-24,30,6,Memory retrieval?,Gray,mem_retr,roi_221_mem_retr,gray
+222,6,-24,0,10,Subcortical,Brown,subcortical,roi_222_subcortical,brown
+223,-2,-13,12,10,Subcortical,Brown,subcortical,roi_223_subcortical,brown
+224,-10,-18,7,10,Subcortical,Brown,subcortical,roi_224_subcortical,brown
+225,12,-17,8,10,Subcortical,Brown,subcortical,roi_225_subcortical,brown
+226,-5,-28,-4,10,Subcortical,Brown,subcortical,roi_226_subcortical,brown
+227,-22,7,-5,10,Subcortical,Brown,subcortical,roi_227_subcortical,brown
+228,-15,4,8,10,Subcortical,Brown,subcortical,roi_228_subcortical,brown
+229,31,-14,2,10,Subcortical,Brown,subcortical,roi_229_subcortical,brown
+230,23,10,1,10,Subcortical,Brown,subcortical,roi_230_subcortical,brown
+231,29,1,4,10,Subcortical,Brown,subcortical,roi_231_subcortical,brown
+232,-31,-11,0,10,Subcortical,Brown,subcortical,roi_232_subcortical,brown
+233,15,5,7,10,Subcortical,Brown,subcortical,roi_233_subcortical,brown
+234,9,-4,6,10,Subcortical,Brown,subcortical,roi_234_subcortical,brown
+235,54,-43,22,11,Ventral attention,Teal,ventral_attention,roi_235_ventral_attention,olivedrab
+236,-56,-50,10,11,Ventral attention,Teal,ventral_attention,roi_236_ventral_attention,olivedrab
+237,-55,-40,14,11,Ventral attention,Teal,ventral_attention,roi_237_ventral_attention,olivedrab
+238,52,-33,8,11,Ventral attention,Teal,ventral_attention,roi_238_ventral_attention,olivedrab
+239,51,-29,-4,11,Ventral attention,Teal,ventral_attention,roi_239_ventral_attention,olivedrab
+240,56,-46,11,11,Ventral attention,Teal,ventral_attention,roi_240_ventral_attention,olivedrab
+241,53,33,1,11,Ventral attention,Teal,ventral_attention,roi_241_ventral_attention,olivedrab
+242,-49,25,-1,11,Ventral attention,Teal,ventral_attention,roi_242_ventral_attention,olivedrab
+243,-16,-65,-20,13,Cerebellar,Pale blue,cerebellar,roi_243_cerebellar,lightslateblue
+244,-32,-55,-25,13,Cerebellar,Pale blue,cerebellar,roi_244_cerebellar,lightslateblue
+245,22,-58,-23,13,Cerebellar,Pale blue,cerebellar,roi_245_cerebellar,lightslateblue
+246,1,-62,-18,13,Cerebellar,Pale blue,cerebellar,roi_246_cerebellar,lightslateblue
+247,33,-12,-34,-1,Uncertain,White,uncertain,roi_247_uncertain,white
+248,-31,-10,-36,-1,Uncertain,White,uncertain,roi_248_uncertain,white
+249,49,-3,-38,-1,Uncertain,White,uncertain,roi_249_uncertain,white
+250,-50,-7,-39,-1,Uncertain,White,uncertain,roi_250_uncertain,white
+251,10,-62,61,12,Dorsal attention,Green,dorsal_attention,roi_251_dorsal_attention,green
+252,-52,-63,5,12,Dorsal attention,Green,dorsal_attention,roi_252_dorsal_attention,green
+253,-47,-51,-21,-1,Uncertain,White,uncertain,roi_253_uncertain,white
+254,46,-47,-17,-1,Uncertain,White,uncertain,roi_254_uncertain,white
+255,47,-30,49,1,Sensory/somatomotor Hand,Cyan,hand,roi_255_hand,cyan
+256,22,-65,48,12,Dorsal attention,Green,dorsal_attention,roi_256_dorsal_attention,green
+257,46,-59,4,12,Dorsal attention,Green,dorsal_attention,roi_257_dorsal_attention,green
+258,25,-58,60,12,Dorsal attention,Green,dorsal_attention,roi_258_dorsal_attention,green
+259,-33,-46,47,12,Dorsal attention,Green,dorsal_attention,roi_259_dorsal_attention,green
+260,-27,-71,37,12,Dorsal attention,Green,dorsal_attention,roi_260_dorsal_attention,green
+261,-32,-1,54,12,Dorsal attention,Green,dorsal_attention,roi_261_dorsal_attention,green
+262,-42,-60,-9,12,Dorsal attention,Green,dorsal_attention,roi_262_dorsal_attention,green
+263,-17,-59,64,12,Dorsal attention,Green,dorsal_attention,roi_263_dorsal_attention,green
+264,29,-5,54,12,Dorsal attention,Green,dorsal_attention,roi_264_dorsal_attention,green
