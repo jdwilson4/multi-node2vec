@@ -44,13 +44,15 @@ def parse_args():
                         help='Number of samples per layer. Default is 1.')
 
     parser.add_argument('--thresh', type=float, default=None,
-                        help='Edge weight threshold for neighborhood selection.')
+                        help='Edge weight threshold for neighborhood selection. Use this only if you want to convert a weighted network to an unweighted one.')
 
     parser.add_argument('--w2v_iter', default=1, type=int,
                         help='Number of epochs in word2vec')
 
     parser.add_argument('--w2v_workers', type=int, default=8,
                         help='Number of parallel worker threads. Default is 8.')
+    parser.add_argument('rvals', type=float, default=0.25,
+                        help='Layer walk parameters. Default is 0.25')
 
     #parser.add_argument('--w', type=float, default=1,
     #                    help='Value of w in neighborhood generation.')
@@ -66,21 +68,21 @@ def main(args):
                                  lambda: mltn2v.parse_matrix_layers(args.dir, binary=True, thresh=args.thresh))
     # check if layers were parsed
     if layers:
-        wvals = [0.25, 0.5, 0.75]
+        #wvals = [0.25, 0.5, 0.75]
         # EXTRACT NEIGHBORHOODS
         nbrhd_dict = mltn2v.timed_invoke("extracting neighborhoods",
-                                     lambda: mltn2v.extract_neighborhoods_walk(layers, args.nbsize, wvals))
+                                     lambda: mltn2v.extract_neighborhoods_walk(layers, args.nbsize, rvals))
         # GENERATE FEATURES
         out = mltn2v.clean_output(args.output)
-        for w in wvals:
+        for w in rvals:
             out_path = os.path.join(out, 'w' + str(w) + '/mltn2v_control')
             mltn2v.timed_invoke("generating features",
                                 lambda: mltn2v.generate_features(nbrhd_dict[w], args.d, out_path, nbrhd_size=args.nbsize,
                                                                  w2v_iter=args.w2v_iter, workers=args.w2v_workers))
 
-            print("\nCompleted Multilayer Network Embedding for w=" + str(w) + " in {:.2f} secs.\nSee results:".format(time.time() - start))
+            print("\nCompleted Multilayer Network Embedding for r=" + str(w) + " in {:.2f} secs.\nSee results:".format(time.time() - start))
             print("\t" + out_path + ".csv")
-        print("Completed Multilayer Network Embedding for all w values.")
+        print("Completed Multilayer Network Embedding for all r values.")
     else:
         print("Whoops!")
 
