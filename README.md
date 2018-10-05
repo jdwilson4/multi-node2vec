@@ -2,6 +2,21 @@
 This is Python source code for the multi-node2vec algorithm. Multi-node2vec is a fast network embedding method for multilayer networks 
 that identifies a continuous and low-dimensional representation for the unique nodes in the network. 
 
+Details of the algorithm can be found in the paper: *Fast Embedding of Multilayer Networks: An Algorithm and Application to Group fMRI* 
+by JD Wilson, M Baybay, R Sankar, and P Stillman. 
+
+**Preprint**: https://arxiv.org/pdf/1809.06437.pdf
+
+__Contributors__:
+- Melanie Baybay
+University of San Francisco, Department of Computer Science
+- Rishi Sankar
+Henry M. Gunn High School
+- James D. Wilson (maintainer)
+University of San Francisco, Department of Mathematics and Statistics
+
+**Questions or Bugs?** Contact James D. Wilson at jdwilson4@usfca.edu
+
 # Description
 
 ## The Mathematical Objective
@@ -18,12 +33,44 @@ where *D* < < N. The function **F** can be viewed as an *N* x *D* matrix whose r
 ## The Algorithm
 The **multi-node2vec** algorithm estimates **F** through maximum likelihood estimation, and relies upon two core steps
 
-1) *NeighborhoodSearch*: a collection of vertex neighborhoods from the observed multilayer graph, also known as a *BagofNodes*, is identified. This is done through a 2nd order random walk on the multilayer network.
+1) __NeighborhoodSearch__: a collection of vertex neighborhoods from the observed multilayer graph, also known as a *BagofNodes*, is identified. This is done through a 2nd order random walk on the multilayer network.
 
-2) *Optimization*: Given a *BagofNodes*, **F** is then estimated through the maximization of the log-likelihood of **F** | **N**. This is done through the application of stochastic gradient descent on a two-layer Skip-gram neural network model.
+2) __Optimization__: Given a *BagofNodes*, **F** is then estimated through the maximization of the log-likelihood of **F** | **N**. This is done through the application of stochastic gradient descent on a two-layer Skip-gram neural network model.
 
 The following image provides a schematic:
 
-![alt text] image
+![multi-node2vec schematic](https://github.com/jdwilson4/multi-node2vec/blob/master/mn2vec_toy.png)
 
+# Running multi-node2vec
+
+## Requirements
+- numpy==1.12.1
+- gensim==2.3.0
+
+
+## Usage
+```
+python multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d D] [--nbsize NBSIZE] [--depth DEPTH] [--n_samples N_SAMPLES]
+[--w2v_iter W2V_ITER] [--w2v_workers W2V_WORKERS] [--rvals RVALS]
+```
+
+***Arguments***
+
+- --dir [directory name]  : Absolute path to directory of correlation/adjacency matrix files in csv format.
+- --output [filename]     : Absolute path to output file (no extension).
+- --d [dimensions]        : Dimensionality. Default is 100.
+- --nbsize [n]            : Neighborhood size. Default is 10.
+- --depth [k]             : Minimum number of sequential layers for a neighborhood to be accepted. Default is 1.
+- --n_samples [samples]   : Number of times to sample a layer. Default is 1.
+- --w2v_iter [iter]       : Number of word2vec epochs
+- --w2v_workers [workers] : Number of parallel worker threads. Default is 8.
+- --rvals [walk prob]     : The unnormalized walk probability of traversing layers. Default is 0.25.
+
+### Example
+```
+python3 multi_node2vec.py --dir data/brainData/control --output results/control --d 100 --nbsize 10 --n_samples 1 --rvals 0.25
+```
+
+This example runs **multi-node2vec** on the multilayer network representing group fMRI of 74 healthy controls. The model will generate
+generate 100 features for each node using a walk parameter *r = 0.25*. The values of *p* and *q* are set to the default of what is available in the original **node2vec** specification.
 
