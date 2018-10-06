@@ -20,12 +20,12 @@ import os
 import src as mltn2v
 import argparse
 import time
-###JAMES - todo: add an argument for r and call it in the function args.r set default to [0.25, 0.5, 0.75]###
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run multi-node2vec on multilayer networks.")
 
-    parser.add_argument('--dir', nargs='?', default='data/brainData/CONTROL_fmt',
+    parser.add_argument('--dir', nargs='?', default='data/CONTROL_fmt',
                         help='Absolute path to directory of correlation/adjacency matrix files (csv format).')
 
     parser.add_argument('--output', nargs='?', default='new_results/',
@@ -51,11 +51,16 @@ def parse_args():
 
     parser.add_argument('--w2v_workers', type=int, default=8,
                         help='Number of parallel worker threads. Default is 8.')
-    parser.add_argument('rvals', type=float, default=0.25,
-                        help='Layer walk parameters. Default is 0.25')
+                        
+    parser.add_argument('--rvals', type=list, default=[0.25, .50, 1],
+                        help='Layer walk parameter for neighborhood search. Default is 0.25')
 
-    #parser.add_argument('--w', type=float, default=1,
-    #                    help='Value of w in neighborhood generation.')
+    parser.add_argument('--pvals', type=float, default=1,
+                        help='Return walk parameter for neighborhood search. Default is 1')
+    
+    parser.add_argument('--qvals', type=float, default=0.5,
+                        help='Exploration walk parameter for neighborhood search. Default is 0.50')
+  
 
     return parser.parse_args()
 
@@ -63,18 +68,16 @@ def parse_args():
 def main(args):
     start = time.time()
     # PARSE LAYERS -- THRESHOLD & CONVERT TO BINARY
-    # TODO: create option for adj list or csv
     layers = mltn2v.timed_invoke("parsing network layers",
                                  lambda: mltn2v.parse_matrix_layers(args.dir, binary=True, thresh=args.thresh))
     # check if layers were parsed
     if layers:
-        #wvals = [0.25, 0.5, 0.75]
         # EXTRACT NEIGHBORHOODS
         nbrhd_dict = mltn2v.timed_invoke("extracting neighborhoods",
-                                     lambda: mltn2v.extract_neighborhoods_walk(layers, args.nbsize, rvals))
+                                     lambda: mltn2v.extract_neighborhoods_walk(layers, args.nbsize, args.rvals, args.pvals, args.qvals))
         # GENERATE FEATURES
         out = mltn2v.clean_output(args.output)
-        for w in rvals:
+        for w in args.rvals:
             out_path = os.path.join(out, 'w' + str(w) + '/mltn2v_control')
             mltn2v.timed_invoke("generating features",
                                 lambda: mltn2v.generate_features(nbrhd_dict[w], args.d, out_path, nbrhd_size=args.nbsize,

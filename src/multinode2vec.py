@@ -55,7 +55,7 @@ def generate_features(nbrhds, d, out, nbrhd_size=-1, w2v_iter=1, workers=8, sg=1
 # -------------------------------------------------------------------------------
 # NEIGHBORHOODS
 # -------------------------------------------------------------------------------
-def extract_neighborhoods_walk(layers, nbrhd_size, wvals, p=1, q=0.5, is_directed=False, weighted=False):
+def extract_neighborhoods_walk(layers, nbrhd_size, wvals, p, q, is_directed=False, weighted=False):
     nxg = []
     for layer in layers:
         nxg.append(nx.convert_matrix.from_pandas_edgelist(layer,edge_attr='weight'))
