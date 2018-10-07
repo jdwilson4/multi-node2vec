@@ -64,7 +64,7 @@ python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d D] [--nbsize NB
 - --n_samples [samples]    : Number of times to sample a layer. Default is 1.
 - --w2v_iter [iter]        : Number of word2vec epochs
 - --w2v_workers [workers]  : Number of parallel worker threads. Default is 8.
-- --rvals [layer walk prob]: The unnormalized walk probability of traversing layers. Default is 0.25.
+- --rvals [layer walk prob]: A list of unnormalized walk probabilities for traversing layers. Default is [0.25, 0.5, 0.75].
 - --pvals [return prob]    : The unnormalized walk probability of returning to a previously seen node. Default is 1.
 - --qvals [explore prob]   : The unnormalized walk probability of exploring new nodes. Default is 0.50. 
 
