@@ -52,7 +52,7 @@ def parse_args():
     parser.add_argument('--w2v_workers', type=int, default=8,
                         help='Number of parallel worker threads. Default is 8.')
                         
-    parser.add_argument('--rvals', type=list, default=[0.25, .50, 1],
+    parser.add_argument('--rvals', type=float, default=0.25,
                         help='Layer walk parameter for neighborhood search. Default is 0.25')
 
     parser.add_argument('--pvals', type=float, default=1,
@@ -78,7 +78,7 @@ def main(args):
         # GENERATE FEATURES
         out = mltn2v.clean_output(args.output)
         for w in args.rvals:
-            out_path = os.path.join(out, 'w' + str(w) + '/mltn2v_control')
+            out_path = os.path.join(out, 'r' + str(w) + '/mltn2v_control') #check this
             mltn2v.timed_invoke("generating features",
                                 lambda: mltn2v.generate_features(nbrhd_dict[w], args.d, out_path, nbrhd_size=args.nbsize,
                                                                  w2v_iter=args.w2v_iter, workers=args.w2v_workers))
@@ -92,4 +92,5 @@ def main(args):
 
 if __name__ == '__main__':
     args = parse_args()
+    args.rvals = [args.rvals]
     main(args)

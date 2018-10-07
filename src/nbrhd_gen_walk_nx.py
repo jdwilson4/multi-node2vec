@@ -56,7 +56,7 @@ class NeighborhoodGen():
 				prev_layer_id = cur_layer_id
 			random.seed(1234)
 			rval = random.random()
-			if rval < w or force_switch: #then switch layer
+			if rval < w or force_switch: #then switch layer CHECK THIS!!
 				total_layers = len(G)
 				rlay = random.randint(0, total_layers - 2)
 				if rlay >= cur_layer_id:
