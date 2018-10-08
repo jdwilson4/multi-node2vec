@@ -46,6 +46,13 @@ def generate_features(nbrhds, d, out, nbrhd_size=-1, w2v_iter=1, workers=8, sg=1
     w2v_model = w2v.Word2Vec(nbrhds, size=d, window=nbrhd_size, min_count=0,
                              workers=workers, iter=w2v_iter, sg=sg)
     embfile = out + ".emb"
+    splitpath = embfile.split('/')
+    if len(splitpath) > 1:
+    	dirs = embfile[:-len(splitpath[-1])]
+    	if not os.path.exists(dirs):
+    		os.makedirs(dirs)
+    if not os.path.exists(embfile):
+    	with open(embfile, 'w'): pass
     w2v_model.wv.save_word2vec_format(embfile)
     ftrs = emb_to_pandas(embfile)
     feature_matrix_to_csv(ftrs, out)
