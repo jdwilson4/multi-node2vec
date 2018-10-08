@@ -71,12 +71,14 @@ python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d D] [--nbsize NB
 ### Examples
 
 __Quick Test example__
+
 This example runs **multi-node2vec** on a small test multilayer network with 2 layers and 264 nodes in each layer. It takes about 2 minutes to run on a personal computer using 8 cores.
 ```
 python3 multi_node2vec.py --dir data/test --output results/test --d 100 --nbsize 2 --n_samples 1 --rvals 0.25
 ```
 
 __fMRI Case Study__
+
 This example runs **multi-node2vec** on the multilayer network representing group fMRI of 74 healthy controls as run in the paper *Fast Embedding of Multilayer Networks: An Algorithm and Application to Group fMRI*. The model will generate
 generate 100 features for each of 264 unique nodes using a walk parameter *r = 0.25*. The values of *p* (=1) and *q* (=0.50) are set to the default of what is available in the original **node2vec** specification. It takes about an hour to run on a personal computer using 8 cores.
 ```
