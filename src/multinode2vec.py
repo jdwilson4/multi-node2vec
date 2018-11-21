@@ -34,8 +34,7 @@ def generate_features(nbrhds, d, out, nbrhd_size=-1, w2v_iter=1, workers=8, sg=1
     :param G_m: multilayer graph
     :param d: feature dimensionality
     :param out: absolute path for output file (no extension, file type)
-    :param nbrhd_size: number of neighbors for each node. Default: max adjacency
-    :param depth: minimum number of layers that a neighborhood persists
+    :param nbrhd_size: window size for Skip-Gram optimization
     :param n_samples: number of generated neighborhoods per node
     :param w2v_iter: number of word2vec training epochs
     :param workers: number of workers
@@ -79,7 +78,7 @@ def extract_neighborhoods_walk(layers, nbrhd_size, wvals, p, q, is_directed=Fals
             for node in layer.nodes():
                 for j in range(52):
                     neighborhoods.append(nbrhd_gen.multinode2vec_walk(w, nbrhd_size, node, i))
-        print("Finished nbrhd generation for w=" + str(w))
+        print("Finished nbrhd generation for r=" + str(w))
         neighborhood_dict[w] = neighborhoods
 
     return neighborhood_dict

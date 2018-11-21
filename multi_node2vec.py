@@ -37,17 +37,20 @@ def parse_args():
     parser.add_argument('--d', type=int, default=100,
                         help='Dimensionality. Default is 100.')
 
-    parser.add_argument('--nbsize', type=int, default=10,
-                        help='Neighborhood size. Default is 10.')
+    parser.add_argument('--walk_length', type=int, default=100,
+                        help='Length of each random walk. Default is 100.')
+                        
+    parser.add_argument('--window_size', type=int, default = 10,
+                        help='Size of context window used for Skip Gram optimization. Default is 10.')
 
     parser.add_argument('--n_samples', type=int, default=1,
-                        help='Number of samples per layer. Default is 1.')
+                        help='Number of walks per node per layer. Default is 1.')
 
     parser.add_argument('--thresh', type=float, default=None,
                         help='Edge weight threshold for neighborhood selection. Use this only if you want to convert a weighted network to an unweighted one.')
 
-    parser.add_argument('--w2v_iter', default=1, type=int,
-                        help='Number of epochs in word2vec')
+    # parser.add_argument('--w2v_iter', default=1, type=int,
+#                         help='Number of epochs in word2vec')
 
     parser.add_argument('--w2v_workers', type=int, default=8,
                         help='Number of parallel worker threads. Default is 8.')
@@ -74,14 +77,14 @@ def main(args):
     if layers:
         # EXTRACT NEIGHBORHOODS
         nbrhd_dict = mltn2v.timed_invoke("extracting neighborhoods",
-                                     lambda: mltn2v.extract_neighborhoods_walk(layers, args.nbsize, args.rvals, args.pvals, args.qvals))
+                                     lambda: mltn2v.extract_neighborhoods_walk(layers, args.walk_length, args.rvals, args.pvals, args.qvals))
         # GENERATE FEATURES
         out = mltn2v.clean_output(args.output)
         for w in args.rvals:
-            out_path = os.path.join(out, 'r' + str(w) + '/mltn2v_control') #check this
+            out_path = os.path.join(out, 'r' + str(w) + '/mltn2v_results') 
             mltn2v.timed_invoke("generating features",
-                                lambda: mltn2v.generate_features(nbrhd_dict[w], args.d, out_path, nbrhd_size=args.nbsize,
-                                                                 w2v_iter=args.w2v_iter, workers=args.w2v_workers))
+                                lambda: mltn2v.generate_features(nbrhd_dict[w], args.d, out_path, nbrhd_size=args.window_size,
+                                                                 w2v_iter=1, workers=args.w2v_workers))
 
             print("\nCompleted Multilayer Network Embedding for r=" + str(w) + " in {:.2f} secs.\nSee results:".format(time.time() - start))
             print("\t" + out_path + ".csv")
