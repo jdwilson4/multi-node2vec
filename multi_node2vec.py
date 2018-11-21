@@ -26,7 +26,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Run multi-node2vec on multilayer networks.")
 
     parser.add_argument('--dir', nargs='?', default='data/CONTROL_fmt',
-                        help='Absolute path to directory of correlation/adjacency matrix files (csv format).')
+                        help='Absolute path to directory of correlation/adjacency matrix files (csv format). Note that rows and columns must be properly labeled by node ID in each .csv.')
 
     parser.add_argument('--output', nargs='?', default='new_results/',
                         help='Absolute path to output directory (no extension).')
