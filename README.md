@@ -50,17 +50,15 @@ The following image provides a schematic:
 
 ## Usage
 ```
-python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d D] [--nbsize NBSIZE] [--depth DEPTH] [--n_samples N_SAMPLES]
-[--w2v_iter W2V_ITER] [--w2v_workers W2V_WORKERS] [--rvals RVALS] [--pvals PVALS] [--qvals QVALS]
+python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--nbsize [NBSIZE]][--n_samples [N_SAMPLES]][--w2v_iter [W2V_ITER]] [--w2v_workers [W2V_WORKERS]] [--rvals [RVALS]] [--pvals [PVALS]] [--qvals [QVALS]]
 ```
 
 ***Arguments***
 
-- --dir [directory name]   : Absolute path to directory of correlation/adjacency matrix files in csv format.
+- --dir [directory name]   : Absolute path to directory of correlation/adjacency matrix files in csv format. Note that each .csv should contain an adjacency matrix with columns and rows labeled by the node ID.
 - --output [filename]      : Absolute path to output file (no extension).
 - --d [dimensions]         : Dimensionality. Default is 100.
-- --nbsize [n]             : Neighborhood size. Default is 10.
-- --depth [k]              : Minimum number of sequential layers for a neighborhood to be accepted. Default is 1.
+- --nbsize [n]             : Neighborhood / context size for running Skip Gram. Default is 10.
 - --n_samples [samples]    : Number of times to sample a layer. Default is 1.
 - --w2v_iter [iter]        : Number of word2vec epochs
 - --w2v_workers [workers]  : Number of parallel worker threads. Default is 8.
