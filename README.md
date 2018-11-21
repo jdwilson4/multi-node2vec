@@ -58,9 +58,9 @@ python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--nbsize 
 - --dir [directory name]   : Absolute path to directory of correlation/adjacency matrix files in csv format. Note that each .csv should contain an adjacency matrix with columns and rows labeled by the node ID.
 - --output [filename]      : Absolute path to output file (no extension).
 - --d [dimensions]         : Dimensionality. Default is 100.
-- --nbsize [n]             : Neighborhood / context size for running Skip Gram. Default is 10.
+- --walk_length [n]        : Length of each random walk for identifying multilayer neighborhoods. Default is 100. 
+- --window_size [w]        : Size of context window used for Skip Gram optimization. Default is 10.
 - --n_samples [samples]    : Number of times to sample a layer. Default is 1.
-- --w2v_iter [iter]        : Number of word2vec epochs
 - --w2v_workers [workers]  : Number of parallel worker threads. Default is 8.
 - --rvals [layer walk prob]: The unnormalized walk probability for traversing layers. Default is .25.
 - --pvals [return prob]    : The unnormalized walk probability of returning to a previously seen node. Default is 1.
@@ -72,7 +72,7 @@ __Quick Test example__
 
 This example runs **multi-node2vec** on a small test multilayer network with 2 layers and 264 nodes in each layer. It takes about 2 minutes to run on a personal computer using 8 cores.
 ```
-python3 multi_node2vec.py --dir data/test --output results/test --d 100 --nbsize 2 --n_samples 1 --rvals 0.25
+python3 multi_node2vec.py --dir data/test --output results/test --d 100 --window_size 2 --n_samples 1 --rvals 0.25
 ```
 
 __fMRI Case Study__
@@ -80,7 +80,7 @@ __fMRI Case Study__
 This example runs **multi-node2vec** on the multilayer network representing group fMRI of 74 healthy controls as run in the paper *Fast Embedding of Multilayer Networks: An Algorithm and Application to Group fMRI*. The model will generate
 generate 100 features for each of 264 unique nodes using a walk parameter *r = 0.25*. The values of *p* (=1) and *q* (=0.50) are set to the default of what is available in the original **node2vec** specification. It takes about an hour to run on a personal computer using 8 cores.
 ```
-python3 multi_node2vec.py --dir data/CONTROL_fmt --output results/control --d 100 --nbsize 10 --n_samples 1 --rvals 0.25 --pvals 1 --qvals 0.5
+python3 multi_node2vec.py --dir data/CONTROL_fmt --output results/control --d 100 --window_size 10 --n_samples 1 --rvals 0.25 --pvals 1 --qvals 0.5
 ```
 
 
