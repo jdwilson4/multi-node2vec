@@ -50,7 +50,7 @@ The following image provides a schematic:
 
 ## Usage
 ```
-python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--nbsize [NBSIZE]][--n_samples [N_SAMPLES]][--w2v_iter [W2V_ITER]] [--w2v_workers [W2V_WORKERS]] [--rvals [RVALS]] [--pvals [PVALS]] [--qvals [QVALS]]
+python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--walk_length [WALK_LENGTH]] [--window_size [WINDOW_SIZE]][--n_samples [N_SAMPLES]][--w2v_iter [W2V_ITER]] [--w2v_workers [W2V_WORKERS]] [--rvals [RVALS]] [--pvals [PVALS]] [--qvals [QVALS]]
 ```
 
 ***Arguments***
