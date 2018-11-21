@@ -50,7 +50,7 @@ The following image provides a schematic:
 
 ## Usage
 ```
-python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--walk_length [WALK_LENGTH]] [--window_size [WINDOW_SIZE]][--n_samples [N_SAMPLES]][--w2v_iter [W2V_ITER]] [--w2v_workers [W2V_WORKERS]] [--rvals [RVALS]] [--pvals [PVALS]] [--qvals [QVALS]]
+python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--walk_length [WALK_LENGTH]] [--window_size [WINDOW_SIZE]][--n_samples [N_SAMPLES]][--thresh [THRESH]][--w2v_iter [W2V_ITER]] [--w2v_workers [W2V_WORKERS]] [--rvals [RVALS]] [--pvals [PVALS]] [--qvals [QVALS]]
 ```
 
 ***Arguments***
@@ -61,6 +61,7 @@ python3 multi_node2vec.py [--dir [DIR]] [--output [OUTPUT]] [--d [D]] [--walk_le
 - --walk_length [n]        : Length of each random walk for identifying multilayer neighborhoods. Default is 100. 
 - --window_size [w]        : Size of context window used for Skip Gram optimization. Default is 10.
 - --n_samples [samples]    : Number of times to sample a layer. Default is 1.
+- --thresh [thresh]		   : Threshold for converting a weighted network to an unweighted one. All weights less than or equal to thresh will be considered 0 and all others 1. Default is 0.5. Use None if the network is unweighted.
 - --w2v_workers [workers]  : Number of parallel worker threads. Default is 8.
 - --rvals [layer walk prob]: The unnormalized walk probability for traversing layers. Default is .25.
 - --pvals [return prob]    : The unnormalized walk probability of returning to a previously seen node. Default is 1.
@@ -72,7 +73,7 @@ __Quick Test example__
 
 This example runs **multi-node2vec** on a small test multilayer network with 2 layers and 264 nodes in each layer. It takes about 2 minutes to run on a personal computer using 8 cores.
 ```
-python3 multi_node2vec.py --dir data/test --output results/test --d 100 --window_size 2 --n_samples 1 --rvals 0.25
+python3 multi_node2vec.py --dir data/test --output results/test --d 100 --window_size 2 --n_samples 1 --thresh 0.5 --rvals 0.25
 ```
 
 __fMRI Case Study__
@@ -80,7 +81,7 @@ __fMRI Case Study__
 This example runs **multi-node2vec** on the multilayer network representing group fMRI of 74 healthy controls as run in the paper *Fast Embedding of Multilayer Networks: An Algorithm and Application to Group fMRI*. The model will generate
 generate 100 features for each of 264 unique nodes using a walk parameter *r = 0.25*. The values of *p* (=1) and *q* (=0.50) are set to the default of what is available in the original **node2vec** specification. It takes about an hour to run on a personal computer using 8 cores.
 ```
-python3 multi_node2vec.py --dir data/CONTROL_fmt --output results/control --d 100 --window_size 10 --n_samples 1 --rvals 0.25 --pvals 1 --qvals 0.5
+python3 multi_node2vec.py --dir data/CONTROL_fmt --output results/control --d 100 --window_size 10 --n_samples 1 --rvals 0.25 --pvals 1 --thresh 0.5 --qvals 0.5
 ```
 
 

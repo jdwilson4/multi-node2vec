@@ -46,8 +46,8 @@ def parse_args():
     parser.add_argument('--n_samples', type=int, default=1,
                         help='Number of walks per node per layer. Default is 1.')
 
-    parser.add_argument('--thresh', type=float, default=None,
-                        help='Edge weight threshold for neighborhood selection. Use this only if you want to convert a weighted network to an unweighted one.')
+    parser.add_argument('--thresh', type=float, default=0.5,
+                        help='Threshold for converting a weighted network to an unweighted one. All weights less than or equal to thresh will be considered 0 and all others 1. Default is 0.5. Use None if the network is unweighted.')
 
     # parser.add_argument('--w2v_iter', default=1, type=int,
 #                         help='Number of epochs in word2vec')
