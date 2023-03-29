@@ -44,8 +44,19 @@ The following image provides a schematic:
 # Running multi-node2vec
 
 ## Requirements
+This package requires Python == 3.6 with the following libraries:
 - numpy==1.12.1
+- pandas==0.24.0
 - gensim==2.3.0
+- networkx==2.5.1
+
+You can install these libraries by running the command 
+
+```
+pip install -r requirements.txt
+``` 
+
+from this project's root directory.
 
 
 ## Usage
